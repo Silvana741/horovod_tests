@@ -1,0 +1,151 @@
+Python located in: /work/projects/ulhpc-tutorials/PS10-Horovod/soft/miniconda/install/bin/python
+Python 3.9.20
+Currently running servers:
+config:
+    /mnt/lscratch/users/sbelegu/micromamba/envs/parallel_mpi/etc/jupyter
+    /mnt/aiongpfs/users/sbelegu/.jupyter
+    /home/users/sbelegu/.local/etc/jupyter
+    /usr/local/etc/jupyter
+    /etc/jupyter
+data:
+    /mnt/lscratch/users/sbelegu/micromamba/envs/parallel_mpi/share/jupyter
+    /home/users/sbelegu/.local/share/jupyter
+    /usr/local/share/jupyter
+    /usr/share/jupyter
+runtime:
+    /home/users/sbelegu/.local/share/jupyter/runtime
+[I 2024-12-07 17:06:03.700 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2024-12-07 17:06:03.705 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2024-12-07 17:06:03.709 ServerApp] jupyterlab | extension was successfully linked.
+[I 2024-12-07 17:06:03.713 ServerApp] nbclassic | extension was successfully linked.
+[I 2024-12-07 17:06:05.629 ServerApp] notebook_shim | extension was successfully linked.
+Available kernels:
+  python3         /mnt/lscratch/users/sbelegu/micromamba/envs/parallel_mpi/share/jupyter/kernels/python3
+  parallel_mpi    /home/users/sbelegu/.local/share/jupyter/kernels/parallel_mpi
+  pyspark         /home/users/sbelegu/.local/share/jupyter/kernels/pyspark
+[I 2024-12-07 17:06:06.083 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-12-07 17:06:06.086 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2024-12-07 17:06:06.087 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2024-12-07 17:06:06.146 LabApp] JupyterLab extension loaded from /mnt/lscratch/users/sbelegu/micromamba/envs/parallel_mpi/lib/python3.9/site-packages/jupyterlab
+[I 2024-12-07 17:06:06.146 LabApp] JupyterLab application directory is /mnt/lscratch/users/sbelegu/micromamba/envs/parallel_mpi/share/jupyter/lab
+[I 2024-12-07 17:06:06.148 LabApp] Extension Manager is 'pypi'.
+[W 2024-12-07 17:06:06.148 LabApp] Failed to instantiate the extension manager pypi. Falling back to read-only manager.
+    Traceback (most recent call last):
+      File "/mnt/lscratch/users/sbelegu/micromamba/envs/parallel_mpi/lib/python3.9/site-packages/jupyterlab/labapp.py", line 835, in initialize_handlers
+        ext_manager = manager_factory(app_options, listings_config, self)
+      File "/mnt/lscratch/users/sbelegu/micromamba/envs/parallel_mpi/lib/python3.9/site-packages/jupyterlab/extensions/__init__.py", line 46, in get_pypi_manager
+        return PyPIExtensionManager(app_options, ext_options, parent)
+      File "/mnt/lscratch/users/sbelegu/micromamba/envs/parallel_mpi/lib/python3.9/site-packages/jupyterlab/extensions/pypi.py", line 134, in __init__
+        self._httpx_client = httpx.AsyncClient(proxies=proxies)
+    TypeError: __init__() got an unexpected keyword argument 'proxies'
+[I 2024-12-07 17:06:06.228 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-12-07 17:06:06.355 ServerApp] nbclassic | extension was successfully loaded.
+[I 2024-12-07 17:06:06.355 ServerApp] Serving notebooks from local directory: /mnt/lscratch/users/sbelegu/horovod_tests
+[I 2024-12-07 17:06:06.355 ServerApp] Jupyter Server 2.14.2 is running at:
+[I 2024-12-07 17:06:06.355 ServerApp] http://172.17.6.194:8888/lab?token=b934899185f34f4570fd854eeaa5c3f66b2c29050b436b4a
+[I 2024-12-07 17:06:06.355 ServerApp]     http://127.0.0.1:8888/lab?token=b934899185f34f4570fd854eeaa5c3f66b2c29050b436b4a
+[I 2024-12-07 17:06:06.355 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2024-12-07 17:06:06.380 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///home/users/sbelegu/.local/share/jupyter/runtime/jpserver-2451850-open.html
+    Or copy and paste one of these URLs:
+        http://172.17.6.194:8888/lab?token=b934899185f34f4570fd854eeaa5c3f66b2c29050b436b4a
+        http://127.0.0.1:8888/lab?token=b934899185f34f4570fd854eeaa5c3f66b2c29050b436b4a
+[I 2024-12-07 17:06:06.449 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2024-12-07 17:08:05.719 ServerApp] 302 GET / (@172.17.2.11) 0.48ms
+[W 2024-12-07 17:08:10.370 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2024-12-07 17:08:10.645 ServerApp] 404 GET /api/contents/parallel_forecasters.py?content=0&hash=0&1733587690598 (689295e89eab41c890cbfacf588d7d84@172.17.2.11) 1.08ms referer=http://localhost:8888/lab?
+[W 2024-12-07 17:08:10.645 ServerApp] 404 GET /api/contents/parallel_forecasters.py?content=0&hash=0&1733587690598 (172.17.2.11): No such file or directory: parallel_forecasters.py
+[W 2024-12-07 17:08:10.647 ServerApp] 404 GET /api/contents/project_3?content=0&hash=0&1733587690598 (689295e89eab41c890cbfacf588d7d84@172.17.2.11) 1.54ms referer=http://localhost:8888/lab?
+[W 2024-12-07 17:08:10.647 ServerApp] 404 GET /api/contents/project_3?content=0&hash=0&1733587690598 (172.17.2.11): No such file or directory: project_3
+[W 2024-12-07 17:08:10.647 ServerApp] 404 GET /api/contents/requirements.txt?content=0&hash=0&1733587690598 (689295e89eab41c890cbfacf588d7d84@172.17.2.11) 2.10ms referer=http://localhost:8888/lab?
+[W 2024-12-07 17:08:10.647 ServerApp] 404 GET /api/contents/requirements.txt?content=0&hash=0&1733587690598 (172.17.2.11): No such file or directory: requirements.txt
+[W 2024-12-07 17:08:10.648 ServerApp] 404 GET /api/contents/project_3/parallel_training.ipynb?content=0&hash=0&1733587690598 (689295e89eab41c890cbfacf588d7d84@172.17.2.11) 2.56ms referer=http://localhost:8888/lab?
+[W 2024-12-07 17:08:10.648 ServerApp] 404 GET /api/contents/project_3/parallel_training.ipynb?content=0&hash=0&1733587690598 (172.17.2.11): No such file or directory: project_3/parallel_training.ipynb
+[W 2024-12-07 17:08:10.664 ServerApp] 404 GET /api/contents/mpi_script.py?content=0&hash=0&1733587690598 (689295e89eab41c890cbfacf588d7d84@172.17.2.11) 0.86ms referer=http://localhost:8888/lab?
+[W 2024-12-07 17:08:10.665 ServerApp] 404 GET /api/contents/mpi_script.py?content=0&hash=0&1733587690598 (172.17.2.11): No such file or directory: mpi_script.py
+[W 2024-12-07 17:08:10.666 ServerApp] 404 GET /api/contents/parallel_env_no_versions.yaml?content=0&hash=0&1733587690598 (689295e89eab41c890cbfacf588d7d84@172.17.2.11) 1.05ms referer=http://localhost:8888/lab?
+[W 2024-12-07 17:08:10.666 ServerApp] 404 GET /api/contents/parallel_env_no_versions.yaml?content=0&hash=0&1733587690598 (172.17.2.11): No such file or directory: parallel_env_no_versions.yaml
+[W 2024-12-07 17:08:10.667 ServerApp] 404 GET /api/contents/run_jupyter_aion_mpi.sh?content=0&hash=0&1733587690598 (689295e89eab41c890cbfacf588d7d84@172.17.2.11) 1.02ms referer=http://localhost:8888/lab?
+[W 2024-12-07 17:08:10.667 ServerApp] 404 GET /api/contents/run_jupyter_aion_mpi.sh?content=0&hash=0&1733587690598 (172.17.2.11): No such file or directory: run_jupyter_aion_mpi.sh
+[W 2024-12-07 17:08:10.668 ServerApp] 404 GET /api/contents/Ensemble_Forecasters.ipynb?content=0&hash=0&1733587690598 (689295e89eab41c890cbfacf588d7d84@172.17.2.11) 1.61ms referer=http://localhost:8888/lab?
+[W 2024-12-07 17:08:10.668 ServerApp] 404 GET /api/contents/Ensemble_Forecasters.ipynb?content=0&hash=0&1733587690598 (172.17.2.11): No such file or directory: Ensemble_Forecasters.ipynb
+[W 2024-12-07 17:08:10.677 ServerApp] 404 GET /api/contents/README.md?content=0&hash=0&1733587690598 (689295e89eab41c890cbfacf588d7d84@172.17.2.11) 0.76ms referer=http://localhost:8888/lab?
+[W 2024-12-07 17:08:10.677 ServerApp] 404 GET /api/contents/README.md?content=0&hash=0&1733587690598 (172.17.2.11): No such file or directory: README.md
+[W 2024-12-07 17:08:10.685 ServerApp] 404 GET /api/contents/run_parallel_forecasting-strong.sh?content=0&hash=0&1733587690598 (689295e89eab41c890cbfacf588d7d84@172.17.2.11) 0.80ms referer=http://localhost:8888/lab?
+[W 2024-12-07 17:08:10.685 ServerApp] 404 GET /api/contents/run_parallel_forecasting-strong.sh?content=0&hash=0&1733587690598 (172.17.2.11): No such file or directory: run_parallel_forecasting-strong.sh
+[W 2024-12-07 17:08:10.686 ServerApp] 404 GET /api/contents/project_3/P3%202.py?content=0&hash=0&1733587690598 (689295e89eab41c890cbfacf588d7d84@172.17.2.11) 0.90ms referer=http://localhost:8888/lab?
+[W 2024-12-07 17:08:10.686 ServerApp] 404 GET /api/contents/project_3/P3%202.py?content=0&hash=0&1733587690598 (172.17.2.11): No such file or directory: project_3/P3 2.py
+[W 2024-12-07 17:08:10.687 ServerApp] 404 GET /api/contents/parallel_forecasters.py?content=0&hash=0&1733587690598 (689295e89eab41c890cbfacf588d7d84@172.17.2.11) 0.70ms referer=http://localhost:8888/lab?
+[W 2024-12-07 17:08:10.687 ServerApp] 404 GET /api/contents/parallel_forecasters.py?content=0&hash=0&1733587690598 (172.17.2.11): No such file or directory: parallel_forecasters.py
+[W 2024-12-07 17:08:10.703 ServerApp] 404 GET /api/contents/mpi_script.py?content=0&hash=0&1733587690599 (689295e89eab41c890cbfacf588d7d84@172.17.2.11) 0.76ms referer=http://localhost:8888/lab?
+[W 2024-12-07 17:08:10.704 ServerApp] 404 GET /api/contents/mpi_script.py?content=0&hash=0&1733587690599 (172.17.2.11): No such file or directory: mpi_script.py
+[W 2024-12-07 17:08:10.722 ServerApp] 404 GET /api/contents/weak/scalability_results_1.csv?content=0&hash=0&1733587690599 (689295e89eab41c890cbfacf588d7d84@172.17.2.11) 1.53ms referer=http://localhost:8888/lab?
+[W 2024-12-07 17:08:10.722 ServerApp] 404 GET /api/contents/weak/scalability_results_1.csv?content=0&hash=0&1733587690599 (172.17.2.11): No such file or directory: weak/scalability_results_1.csv
+[W 2024-12-07 17:08:10.723 ServerApp] 404 GET /api/contents/weak/scalability_results_10.csv?content=0&hash=0&1733587690599 (689295e89eab41c890cbfacf588d7d84@172.17.2.11) 1.97ms referer=http://localhost:8888/lab?
+[W 2024-12-07 17:08:10.723 ServerApp] 404 GET /api/contents/weak/scalability_results_10.csv?content=0&hash=0&1733587690599 (172.17.2.11): No such file or directory: weak/scalability_results_10.csv
+[W 2024-12-07 17:08:10.724 ServerApp] 404 GET /api/contents/weak/scalability_results_17.csv?content=0&hash=0&1733587690599 (689295e89eab41c890cbfacf588d7d84@172.17.2.11) 2.43ms referer=http://localhost:8888/lab?
+[W 2024-12-07 17:08:10.724 ServerApp] 404 GET /api/contents/weak/scalability_results_17.csv?content=0&hash=0&1733587690599 (172.17.2.11): No such file or directory: weak/scalability_results_17.csv
+[W 2024-12-07 17:08:10.724 ServerApp] 404 GET /api/contents/weak/scalability_results_0.csv?content=0&hash=0&1733587690599 (689295e89eab41c890cbfacf588d7d84@172.17.2.11) 2.91ms referer=http://localhost:8888/lab?
+[W 2024-12-07 17:08:10.724 ServerApp] 404 GET /api/contents/weak/scalability_results_0.csv?content=0&hash=0&1733587690599 (172.17.2.11): No such file or directory: weak/scalability_results_0.csv
+[W 2024-12-07 17:08:10.740 ServerApp] 404 GET /api/contents/scalability_data/scalability_results_12.csv?content=0&hash=0&1733587690599 (689295e89eab41c890cbfacf588d7d84@172.17.2.11) 0.86ms referer=http://localhost:8888/lab?
+[W 2024-12-07 17:08:10.740 ServerApp] 404 GET /api/contents/scalability_data/scalability_results_12.csv?content=0&hash=0&1733587690599 (172.17.2.11): No such file or directory: scalability_data/scalability_results_12.csv
+[W 2024-12-07 17:08:10.741 ServerApp] 404 GET /api/contents/weak/scalability_results_11.csv?content=0&hash=0&1733587690599 (689295e89eab41c890cbfacf588d7d84@172.17.2.11) 0.84ms referer=http://localhost:8888/lab?
+[W 2024-12-07 17:08:10.741 ServerApp] 404 GET /api/contents/weak/scalability_results_11.csv?content=0&hash=0&1733587690599 (172.17.2.11): No such file or directory: weak/scalability_results_11.csv
+[W 2024-12-07 17:08:10.741 ServerApp] 404 GET /api/contents/weak/scalability_results_1.csv?content=0&hash=0&1733587690599 (689295e89eab41c890cbfacf588d7d84@172.17.2.11) 1.26ms referer=http://localhost:8888/lab?
+[W 2024-12-07 17:08:10.742 ServerApp] 404 GET /api/contents/weak/scalability_results_1.csv?content=0&hash=0&1733587690599 (172.17.2.11): No such file or directory: weak/scalability_results_1.csv
+[W 2024-12-07 17:08:10.762 ServerApp] 404 GET /api/contents/weak/updated_scalability_results_25.csv?content=0&hash=0&1733587690599 (689295e89eab41c890cbfacf588d7d84@172.17.2.11) 1.17ms referer=http://localhost:8888/lab?
+[W 2024-12-07 17:08:10.762 ServerApp] 404 GET /api/contents/weak/updated_scalability_results_25.csv?content=0&hash=0&1733587690599 (172.17.2.11): No such file or directory: weak/updated_scalability_results_25.csv
+[W 2024-12-07 17:08:10.763 ServerApp] 404 GET /api/contents/weak/consolidated_avg_exec_time.csv?content=0&hash=0&1733587690599 (689295e89eab41c890cbfacf588d7d84@172.17.2.11) 1.64ms referer=http://localhost:8888/lab?
+[W 2024-12-07 17:08:10.763 ServerApp] 404 GET /api/contents/weak/consolidated_avg_exec_time.csv?content=0&hash=0&1733587690599 (172.17.2.11): No such file or directory: weak/consolidated_avg_exec_time.csv
+[W 2024-12-07 17:08:10.763 ServerApp] 404 GET /api/contents/weak/scalability_results_12.csv?content=0&hash=0&1733587690599 (689295e89eab41c890cbfacf588d7d84@172.17.2.11) 2.10ms referer=http://localhost:8888/lab?
+[W 2024-12-07 17:08:10.763 ServerApp] 404 GET /api/contents/weak/scalability_results_12.csv?content=0&hash=0&1733587690599 (172.17.2.11): No such file or directory: weak/scalability_results_12.csv
+[W 2024-12-07 17:08:10.764 ServerApp] 404 GET /api/contents/weak/updated_scalability_results_20.csv?content=0&hash=0&1733587690599 (689295e89eab41c890cbfacf588d7d84@172.17.2.11) 2.56ms referer=http://localhost:8888/lab?
+[W 2024-12-07 17:08:10.764 ServerApp] 404 GET /api/contents/weak/updated_scalability_results_20.csv?content=0&hash=0&1733587690599 (172.17.2.11): No such file or directory: weak/updated_scalability_results_20.csv
+[W 2024-12-07 17:08:10.781 ServerApp] 404 GET /api/contents/weak/updated_scalability_results_9.csv?content=0&hash=0&1733587690599 (689295e89eab41c890cbfacf588d7d84@172.17.2.11) 0.65ms referer=http://localhost:8888/lab?
+[W 2024-12-07 17:08:10.781 ServerApp] 404 GET /api/contents/weak/updated_scalability_results_9.csv?content=0&hash=0&1733587690599 (172.17.2.11): No such file or directory: weak/updated_scalability_results_9.csv
+[W 2024-12-07 17:08:10.787 ServerApp] 404 GET /api/contents/Ensemble_Forecasters.ipynb?content=0&hash=0&1733587690599 (689295e89eab41c890cbfacf588d7d84@172.17.2.11) 0.81ms referer=http://localhost:8888/lab?
+[W 2024-12-07 17:08:10.787 ServerApp] 404 GET /api/contents/Ensemble_Forecasters.ipynb?content=0&hash=0&1733587690599 (172.17.2.11): No such file or directory: Ensemble_Forecasters.ipynb
+[W 2024-12-07 17:08:10.788 ServerApp] 404 GET /api/contents/project_3/parallel_training.ipynb?content=0&hash=0&1733587690599 (689295e89eab41c890cbfacf588d7d84@172.17.2.11) 1.24ms referer=http://localhost:8888/lab?
+[W 2024-12-07 17:08:10.788 ServerApp] 404 GET /api/contents/project_3/parallel_training.ipynb?content=0&hash=0&1733587690599 (172.17.2.11): No such file or directory: project_3/parallel_training.ipynb
+[W 2024-12-07 17:08:10.810 ServerApp] 404 GET /api/contents/run_jupyter_aion_mpi.sh?content=0&hash=0&1733587690599 (689295e89eab41c890cbfacf588d7d84@172.17.2.11) 0.66ms referer=http://localhost:8888/lab?
+[W 2024-12-07 17:08:10.810 ServerApp] 404 GET /api/contents/run_jupyter_aion_mpi.sh?content=0&hash=0&1733587690599 (172.17.2.11): No such file or directory: run_jupyter_aion_mpi.sh
+[W 2024-12-07 17:08:10.811 ServerApp] 404 GET /api/contents/README.md?content=0&hash=0&1733587690599 (689295e89eab41c890cbfacf588d7d84@172.17.2.11) 1.00ms referer=http://localhost:8888/lab?
+[W 2024-12-07 17:08:10.811 ServerApp] 404 GET /api/contents/README.md?content=0&hash=0&1733587690599 (172.17.2.11): No such file or directory: README.md
+[W 2024-12-07 17:08:10.812 ServerApp] 404 GET /api/contents/mpi_script.py?content=0&hash=0&1733587690599 (689295e89eab41c890cbfacf588d7d84@172.17.2.11) 1.43ms referer=http://localhost:8888/lab?
+[W 2024-12-07 17:08:10.812 ServerApp] 404 GET /api/contents/mpi_script.py?content=0&hash=0&1733587690599 (172.17.2.11): No such file or directory: mpi_script.py
+[W 2024-12-07 17:08:10.812 ServerApp] 404 GET /api/contents/requirements.txt?content=0&hash=0&1733587690600 (689295e89eab41c890cbfacf588d7d84@172.17.2.11) 1.90ms referer=http://localhost:8888/lab?
+[W 2024-12-07 17:08:10.812 ServerApp] 404 GET /api/contents/requirements.txt?content=0&hash=0&1733587690600 (172.17.2.11): No such file or directory: requirements.txt
+[W 2024-12-07 17:08:10.817 ServerApp] 404 GET /api/contents/parallel_forecasters.py?content=0&hash=0&1733587690600 (689295e89eab41c890cbfacf588d7d84@172.17.2.11) 0.62ms referer=http://localhost:8888/lab?
+[W 2024-12-07 17:08:10.817 ServerApp] 404 GET /api/contents/parallel_forecasters.py?content=0&hash=0&1733587690600 (172.17.2.11): No such file or directory: parallel_forecasters.py
+[W 2024-12-07 17:08:10.838 ServerApp] 404 GET /api/contents/parallel_env_no_versions.yaml?content=0&hash=0&1733587690600 (689295e89eab41c890cbfacf588d7d84@172.17.2.11) 0.85ms referer=http://localhost:8888/lab?
+[W 2024-12-07 17:08:10.838 ServerApp] 404 GET /api/contents/parallel_env_no_versions.yaml?content=0&hash=0&1733587690600 (172.17.2.11): No such file or directory: parallel_env_no_versions.yaml
+[W 2024-12-07 17:08:11.857 ServerApp] 404 GET /api/contents/project_3?1733587691791 (689295e89eab41c890cbfacf588d7d84@172.17.2.11) 0.66ms referer=http://localhost:8888/lab?
+[W 2024-12-07 17:08:11.857 ServerApp] 404 GET /api/contents/project_3?1733587691791 (172.17.2.11): No such file or directory: project_3
+[I 2024-12-07 17:08:20.861 ServerApp] Creating new notebook in 
+[I 2024-12-07 17:08:25.457 ServerApp] Kernel started: bddc6ed2-2575-4082-b529-284012c26896
+[I 2024-12-07 17:08:30.049 ServerApp] Connecting to kernel bddc6ed2-2575-4082-b529-284012c26896.
+[I 2024-12-07 17:08:30.051 ServerApp] Connecting to kernel bddc6ed2-2575-4082-b529-284012c26896.
+[I 2024-12-07 17:08:30.085 ServerApp] Connecting to kernel bddc6ed2-2575-4082-b529-284012c26896.
+[I 2024-12-07 17:08:45.380 ServerApp] Creating new file in 
+[I 2024-12-07 17:09:00.670 ServerApp] Saving file at /test_horovod.py
+[I 2024-12-07 17:10:21.192 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-07 17:12:21.339 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-07 17:14:14.547 ServerApp] Creating new file in 
+[I 2024-12-07 17:14:54.404 ServerApp] Saving file at /tensorflow_horovod.py
+[I 2024-12-07 17:14:55.773 ServerApp] Saving file at /horovod_report.ipynb
+[I 2024-12-07 17:16:55.936 ServerApp] Saving file at /horovod_report.ipynb
+[I 2024-12-07 17:18:26.512 ServerApp] Creating new file in 
+[I 2024-12-07 17:18:38.574 ServerApp] Saving file at /pytorch_horovod.py
+[I 2024-12-07 17:21:45.148 ServerApp] Creating new file in 
+[I 2024-12-07 17:22:04.473 ServerApp] Saving file at /multinode-multigpu-test.sh
+[I 2024-12-07 17:25:18.066 ServerApp] Kernel started: 71921dce-3e26-412a-ab92-c8f29f29243a
+[I 2024-12-07 17:25:18.067 ServerApp] Kernel shutdown: bddc6ed2-2575-4082-b529-284012c26896
+[I 2024-12-07 17:25:18.767 ServerApp] Connecting to kernel 71921dce-3e26-412a-ab92-c8f29f29243a.
+[I 2024-12-07 17:25:18.819 ServerApp] Connecting to kernel 71921dce-3e26-412a-ab92-c8f29f29243a.
+[I 2024-12-07 17:26:59.251 ServerApp] Saving file at /horovod_report.ipynb
+[I 2024-12-07 17:27:38.844 ServerApp] Saving file at /horovod_report.ipynb
+[I 2024-12-07 17:30:54.327 ServerApp] Saving file at /horovod_report.ipynb
+[I 2024-12-07 17:32:54.522 ServerApp] Saving file at /horovod_report.ipynb
+[I 2024-12-07 17:34:32.281 ServerApp] Saving file at /horovod_report.ipynb
